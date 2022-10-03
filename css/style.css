@@ -34,6 +34,27 @@ li a{
 .bg-lightblue{
     background-color: #b4d0e7;
 }
+
+.img-container{
+    flex-grow: 2;
+}
+
+h2{
+    font-size: 32px;
+    margin: 0 0 24px;
+}
+h3{
+    font-size: 20px;
+    margin: 0 0 24px;
+}
+
+.p-container{
+    flex-grow: 1;
+    font-size: var(--small-font);
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+}
 /* stili per la sezione header*/
 /* inizio dalla nav */
 
@@ -51,7 +72,6 @@ header nav div img{
     width: 100px;
     margin-top: .2rem;
     object-fit: contain;
-
 }
 
 header nav div ul{
@@ -64,14 +84,14 @@ header nav div ul{
 
 /* terminata la nav passo al resto dell'header */
 .large-container{
-    max-width: 80vh;
+    max-width: 85vh;
     margin: auto;
     position: relative;
-    top: 60px;
+    top: 50px;
 }
 
 h1{
-    font-size: 3em;
+    font-size: 48px;
     margin-bottom: 2rem;
 }
 
@@ -83,10 +103,6 @@ h1{
     row-gap: 20px;
 }
 
-.img-container{
-    flex-grow: 2;
-}
-
 header .img-container img{
     max-width: 500px;
 }
@@ -95,3 +111,57 @@ header .img-container img{
     margin-top: 20px;
     font-size: 25px;
 }
+
+/* stili per il main */
+
+.main-container{
+    max-width: 75vh;
+    margin: 70px auto 0;
+}
+
+.main-container  section{
+    margin: 100px 0 0;
+}
+
+.pay-plan{
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+.plan{
+    border: 1px solid black;
+    height: 100px;
+    flex-grow: 1;
+    margin: 24px 0 0;
+}
+
+.plan > div{
+    border-bottom: 1px solid black;
+}
+/* stili per la seconda sezione */
+
+main .img-container img{
+    max-width: 500px;
+    object-fit: contain;
+}
+main .p-container{
+    padding: 20px;
+}
+
+/* stili per le cards */
+.card-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    font-size: var(--small-font);
+}
+
+.card{
+    flex-direction: column;
+    max-width: 230px;
+}
+.card img{
+    max-width: 230px;
+    object-fit: contain;
+}
+
