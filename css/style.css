@@ -24,7 +24,6 @@ li a{
     background-color: transparent;
     border: none;
     padding: .3rem .7rem;
-    
 }
 
 .blue-button{
@@ -32,6 +31,9 @@ li a{
     color: white;
 }
 
+.bg-lightblue{
+    background-color: #b4d0e7;
+}
 /* stili per la sezione header*/
 /* inizio dalla nav */
 
@@ -58,4 +60,38 @@ header nav div ul{
     align-items: center;
     column-gap: 1rem;
 
+}
+
+/* terminata la nav passo al resto dell'header */
+.large-container{
+    max-width: 80vh;
+    margin: auto;
+    position: relative;
+    top: 60px;
+}
+
+h1{
+    font-size: 3em;
+    margin-bottom: 2rem;
+}
+
+.p-container{
+    flex-grow: 1;
+    font-size: var(--small-font);
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+}
+
+.img-container{
+    flex-grow: 2;
+}
+
+header .img-container img{
+    max-width: 500px;
+}
+
+.fa-arrow-down{
+    margin-top: 20px;
+    font-size: 25px;
 }
