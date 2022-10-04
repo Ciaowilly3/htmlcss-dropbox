@@ -1,8 +1,9 @@
 /* gli stili da riutilizzare li inserisco in questa sezione antecedente agli stili
 più specifici */
 :root{
-    --small-font: 12px;
+    --small-font: 16px;
     --section-margin: 100px;
+    --distance32: 32px
 }
 
 *{
@@ -32,7 +33,7 @@ button{
 .btn{
     background-color: transparent;
     border: none;
-    padding: .3rem .7rem;
+    padding: 10px 24px;
 }
 
 .blue-button{
@@ -47,13 +48,16 @@ button{
 .img-container{
     width: 70%;
 }
-
+.large-container{
+    max-width: 65vw;
+    margin: auto;
+}
 h2{
     font-size: 32px;
     padding: 0 0 24px;
 }
 h3{
-    font-size: 20px;
+    font-size: 24px;
     padding: 0 0 24px;
 }
 
@@ -69,6 +73,18 @@ section:last-of-type{
     margin-bottom: var(--section-margin);
 }
 
+.little-row{
+    border-bottom: 1px solid;
+}
+
+section{
+    max-width: 50vw;
+    margin: var(--section-margin) auto 0;
+}
+.gray{
+    color: #9c9d8c;
+    padding: 8px 0; 
+}
 /* stili per la sezione header*/
 /* inizio dalla nav */
 
@@ -102,10 +118,7 @@ header nav div ul{
 
 }
 
-.large-container{
-    max-width: 65vw;
-    margin: auto;
-}
+
 /* terminata la nav passo al resto dell'header */
 .jumbotron{
     position: relative;
@@ -115,7 +128,8 @@ header nav div ul{
 
 h1{
     font-size: 48px;
-    margin-bottom: 32px;
+    margin-bottom: var(--distance32);
+    margin-top: var(--distance32);
     font-weight: 700;
 }
 
@@ -126,16 +140,14 @@ header .img-container img{
 }
 
 .fa-arrow-down{
-    margin-top: 20px;
-    font-size: 25px;
+    margin-top: 50px;
+    font-size: 32px;
 }
 
 /* stili per il main */
 
-
-section{
-    max-width: 50vw;
-    margin: var(--section-margin) auto 0;
+main div ul li{
+    padding-bottom: 24px;
 }
 
 .pay-plan{
@@ -143,25 +155,70 @@ section{
     column-gap: 10px;
 }
 
+.radio-container{
+    align-items: center;
+}
+
+.radio{
+    padding-right: 16px;
+}
+
 .plan{
-    border: 1px solid black;
-    height: 100px;
+    border: 1px solid #9c9d8c;
     flex-grow: 1;
     margin: 24px 0 0;
 }
 
-.plan > div{
-    border-bottom: 1px solid black;
+.plan > span{
+    display: block;
+    border-bottom: 1px solid #9c9d8c;
+    padding: 8px 0;
+    text-align: center;
+}
+.content-container{
+    width: 90%;
+    margin: auto;
+    border-color: transparent;
+    flex-direction: column;
+}
+
+.plan h3{
+    padding: 24px 0 16px;
+}
+
+.ul-container ul{
+    list-style: none;
+    padding: var(--distance32) 0;
+
+}
+.content-container button{
+    align-self: center;
+    width: 99%;
+    margin-bottom: var(--distance32);
+}
+.content-container .little-row{
+    width: 20%;
+    margin: 64px 0 var(--distance32) 0;
+    border-color: #9c9d8c;
+}
+.fa-check{
+    color: #0061ff;
 }
 /* stili per la seconda sezione */
 
 main .img-container img{
-    max-width: 450px;
+    max-width: 600px;
     object-fit: contain;
     display: block;
 }
 main .p-container{
     padding: 20px;
+}
+
+.partner-btn{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 8px;
 }
 
 /* stili per le cards */
@@ -212,3 +269,45 @@ main .bg-lightblue button{
 
 /* stili del footer */
 
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer h3{
+    padding: 50px 0 8px 0;
+}
+
+footer .large-container{
+    justify-content: space-between;
+}
+
+footer div ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer div ul li{
+    padding-bottom: 8px;
+}
+
+footer div ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .little-row{
+    width: var(--section-margin);
+    border-color: white;
+    margin-top: 50px;
+}
+
+.lang-selector{
+    display: inline-block;
+    margin-top: 24px;
+    color: #9c9d8c;
+}
+footer .fa-solid{
+    color: #9c9d8c;
+    padding-right: 8px;
+}

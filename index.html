@@ -66,40 +66,117 @@
         <main>
             <section>
                 <h2>Trova il piano business che fa per te</h2>
-                <div class="d-flex">
+                <div class="d-flex radio-container">
                     <!-- metodo per i radio preso da w3, aspetto la lezione di domani per
                     delucidazioni -->
-                    <input type="radio" id="" name="" value="mensile">
-                        <label for="mensile">Fatturazione mensile</label><br>
-                        <input type="radio" id="" name="" value="annua">
-                        <label for="annua">Fatturazione annuale</label><br>
+                    <input type="radio" id="" name="" value="mensile"  >
+                    <label for="mensile" class="radio">Fatturazione mensile</label><br>
+                    <input type="radio" id="" name="" value="annua">
+                    <label for="annua">Fatturazione annuale</label><br>
                 </div>
                 <!-- inizio a sistemare i div per le tre colonne con i piani di pagamento -->
                 <div class="pay-plan d-flex">
                     <div class="plan">
-                        <div>
-                            singolo
+                        <span>
+                            <i class="fa-solid fa-user"></i> singolo
+                        </span>
+                        <div class="content-container d-flex">
+                            <h3>Professional</h3>
+                            <strong>&euro; 12.00</strong>
+                            <div class="gray">
+                                /mese
+                            </div>
+                            <div class="ul-container">
+                                <ul>
+                                    <li><i class="fa-solid fa-user"></i> 1 utente</li>
+                                    <li><i class="fa-solid fa-folder"></i> 5TB di spazio di archiviazione sicuro</li>
+                                    <li><i class="fa-solid fa-share-nodes"></i> Funzione di produttività premium e condivisione file semplice e sicura</li>
+                                </ul>
+                            </div>
+                            <button class="btn blue-button">Prova gratis per 30 giorni</button>
+                            <span>Oppure <a href="#">acquista ora</a></span>
+                            <div class="little-row"></div>
+                            <div class="ul-container">
+                                <ul>
+                                    <li><h4>Punti salienti del piano</h4></li>
+                                    <li><i class="fa-solid fa-check"></i> 5TB di spazio di archiviazione</li>
+                                    <li><i class="fa-solid fa-check"></i> Funzione di produttività premium e condivisione file semplice e sicura</li>
+                                </ul>
+                            </div>
+                            
                         </div>
                     </div>
 
                     <div class="plan">
-                        <div>
-                            Team
+                        <span>
+                            <i class="fa-solid fa-users"></i> Team
+                        </span>
+                        <div class="content-container">
+                            <h3>Advanced</h3>
+                            <strong>&euro; 18.00</strong>
+                            <div class="gray">
+                                /utente/mese
+                            </div>
+                            <div class="ul-container">
+                                <ul>
+                                    <li><i class="fa-solid fa-users"></i> 3 utenti</li>
+                                    <li><i class="fa-solid fa-folder"></i> Tutto lo spazio di cui ha bisogno il tuo team</li>
+                                    <li><i class="fa-solid fa-share-nodes"></i> Sofisticate funzioni di controllo per tenere al sicuro tutti i file del tuo team</li>
+                                </ul>
+                            </div>
+                            <button class="btn blue-button">Prova gratis per 30 giorni</button>
+                            <span>Oppure <a href="#">acquista ora</a></span>
+                            <div class="little-row"></div>
+                            <div class="ul-container">
+                                <ul>
+                                    <li><h4>Punti salienti del piano</h4></li>
+                                    <li><i class="fa-solid fa-check"></i> Nessun limite di spazio per i file</li>
+                                    <li><i class="fa-solid fa-check"></i> Cartelle offline sui dispositivi mobili</li>
+                                    <li><i class="fa-solid fa-check"></i> Risparmio del 50% rispetto alle iscrizioni singole</li>
+                                    <li><i class="fa-solid fa-check"></i> Possibilità di inserire nuovi membri del Team</li>
+                                    <li><i class="fa-solid fa-check"></i> Gestione dei permessi in base ai ruoili</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
                     <div class="plan">
-                        <div>
-                            Azienda
+                        <span>
+                            <i class="fa-solid fa-building"></i> Azienda
+                        </span>
+                        <div class="content-container">
+                            <h3>Enterpriese--</h3>
+                            <strong>Contattaci</strong>
+                            <div class="gray">
+                                -
+                            </div>
+                            <div class="ul-container">
+                                <ul>
+                                    <li><i class="fa-solid fa-user"></i> 10 o più utenti</li>
+                                    <li><i class="fa-solid fa-folder"></i> Soluzioni personalizzabili per la tua azienda</li>
+                                    <li><i class="fa-solid fa-share-nodes"></i> Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</li>
+                                </ul>
+                            </div>
+                            <button class="btn blue-button">Contattaci</button>
+                            <span>Oppure <a href="#">acquista ora</a></span>
+                            <div class="little-row"></div>
+                            <div class="ul-container">
+                                <ul>
+                                    <li><h4>Punti salienti del piano</h4></li>
+                                    <li><i class="fa-solid fa-check"></i> Cartelle offline sui dispositivi mobili</li>
+                                    <li><i class="fa-solid fa-check"></i> Servizio assistenza 24/h</li>
+                                    <li><i class="fa-solid fa-check"></i> Possibilità di personalizzazione totale</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- uso un altro div per la sezione orizzontale  enterpriese-->
                 <div class="d-flex">
                     <div class="plan">
-                        <div>
-                            Team
-                        </div>
+                        <span>
+                            <i class="fa-solid fa-building"></i> Team
+                        </span>
                     </div>
                 </div>
             </section>
@@ -117,7 +194,7 @@
                         aziendali, tra cui implementazione,
                         integrazione, gestione e supporto continui
                     </p>
-                    <button>Trova un partner</button>
+                    <button class="partner-btn">Trova un partner</button>
                 </div>
             </section>
             <section>
@@ -233,12 +310,13 @@
                     <hr>
                     <span class="FAQ">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
                     <i class="fa-solid fa-chevron-down"></i>
+                    <hr>
                 </div>
             </section>
         </main>
 
         <footer>
-            <div class="large-container">
+            <div class="large-container d-flex">
                 <ul>
                     <li><h3>Dropbox</h3></li>
                     <li><a href="#">Applicazione desktop</a></li>
@@ -247,7 +325,46 @@
                     <li><a href="#">Sicurezza</a></li>
                     <li><a href="#">funzioni</a></li>
                 </ul>
+                <ul>
+                    <li><h3>Prodotti</h3></li>
+                    <li><a href="#">Applicazione desktop</a></li>
+                    <li><a href="#">Perchè Dropbox</a></li>
+                    <li><a href="#">Piani</a></li>
+                    <li><a href="#">Sicurezza</a></li>
+                    <li><a href="#">funzioni</a></li>
+                </ul>
+                <ul>
+                    <li><h3>Azienda</h3></li>
+                    <li><a href="#">Applicazione desktop</a></li>
+                    <li><a href="#">Perchè Dropbox</a></li>
+                    <li><a href="#">Piani</a></li>
+                    <li><a href="#">Sicurezza</a></li>
+                    <li><a href="#">funzioni</a></li>
+                </ul>
+                <ul>
+                    <li><h3>Supporto</h3></li>
+                    <li><a href="#">Applicazione desktop</a></li>
+                    <li><a href="#">Perchè Dropbox</a></li>
+                    <li><a href="#">Piani</a></li>
+                    <li><a href="#">Sicurezza</a></li>
+                    <li><a href="#">funzioni</a></li>
+                </ul>
+                <ul>
+                    <li><h3>Community</h3></li>
+                    <li><a href="#">Applicazione desktop</a></li>
+                    <li><a href="#">Perchè Dropbox</a></li>
+                    <li><a href="#">Piani</a></li>
+                    <li><a href="#">Sicurezza</a></li>
+                    <li><a href="#">funzioni</a></li>
+                </ul>
             </div>
+            <div class="large-container">
+                <div class="little-row"></div>
+                <span class="lang-selector">
+                    <i class="fa-solid fa-earth-americas"></i>Italianio <a href="#"><i class="fa-solid fa-caret-up"></i></a>
+                </span>
+            </div>
+
         </footer>
 
     </body>
