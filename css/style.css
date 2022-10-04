@@ -2,13 +2,17 @@
 più specifici */
 :root{
     --small-font: 12px;
+    --section-margin: 100px;
 }
 
 *{
-    font-family: arial;
     margin: 0;
+    box-sizing: border-box;
 }
-
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--small-font);
+}
 .d-flex{
     display: flex;
 }
@@ -18,6 +22,11 @@ li a{
     color: black;
     padding: 0 0 .5rem;
     
+}
+
+button{
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--small-font);
 }
 
 .btn{
@@ -36,25 +45,27 @@ li a{
 }
 
 .img-container{
-    flex-grow: 2;
+    width: 70%;
 }
 
 h2{
     font-size: 32px;
-    margin: 0 0 24px;
+    padding: 0 0 24px;
 }
 h3{
     font-size: 20px;
-    margin: 0 0 24px;
+    padding: 0 0 24px;
 }
 
 .p-container{
-    flex-grow: 1;
     font-size: var(--small-font);
     flex-direction: column;
     align-items: flex-start;
     row-gap: 20px;
+    width: 30%;
 }
+
+
 /* stili per la sezione header*/
 /* inizio dalla nav */
 
@@ -62,6 +73,12 @@ header nav{
     display: flex;
     justify-content: space-between;
     font-size: var(--small-font);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
 }
 
 .nav-container{
@@ -84,7 +101,7 @@ header nav div ul{
 
 /* terminata la nav passo al resto dell'header */
 .large-container{
-    max-width: 85vh;
+    max-width: 65vw;
     margin: auto;
     position: relative;
     top: 50px;
@@ -92,19 +109,14 @@ header nav div ul{
 
 h1{
     font-size: 48px;
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
+    font-weight: 700;
 }
 
-.p-container{
-    flex-grow: 1;
-    font-size: var(--small-font);
-    flex-direction: column;
-    align-items: flex-start;
-    row-gap: 20px;
-}
 
 header .img-container img{
-    max-width: 500px;
+    max-width: 100%;
+    display: block;
 }
 
 .fa-arrow-down{
@@ -114,13 +126,10 @@ header .img-container img{
 
 /* stili per il main */
 
-.main-container{
-    max-width: 75vh;
-    margin: 70px auto 0;
-}
 
-.main-container  section{
-    margin: 100px 0 0;
+section{
+    max-width: 50vw;
+    margin: var(--section-margin) auto 0;
 }
 
 .pay-plan{
@@ -141,8 +150,9 @@ header .img-container img{
 /* stili per la seconda sezione */
 
 main .img-container img{
-    max-width: 500px;
+    max-width: 450px;
     object-fit: contain;
+    display: block;
 }
 main .p-container{
     padding: 20px;
@@ -154,14 +164,35 @@ main .p-container{
     flex-wrap: wrap;
     column-gap: 10px;
     font-size: var(--small-font);
+    margin-bottom: 150px;
 }
 
 .card{
     flex-direction: column;
-    max-width: 230px;
+    max-width: 215px;
 }
 .card img{
-    max-width: 230px;
+    max-width: 215px;
     object-fit: contain;
+    display: block;
 }
 
+/* stili per la sezione sotto i quadrati */
+
+.bg-lightblue h2{
+    margin: var(--section-margin);
+    margin-left: 0;
+    color: #73242e;
+}
+
+.bg-lightblue section .d-flex{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+main .bg-lightblue button{
+    width: 50%;
+    border: none;
+    padding: .5rem .7rem;
+}
