@@ -65,6 +65,9 @@ h3{
     width: 30%;
 }
 
+section:last-of-type{
+    margin-bottom: var(--section-margin);
+}
 
 /* stili per la sezione header*/
 /* inizio dalla nav */
@@ -99,13 +102,16 @@ header nav div ul{
 
 }
 
-/* terminata la nav passo al resto dell'header */
 .large-container{
     max-width: 65vw;
     margin: auto;
+}
+/* terminata la nav passo al resto dell'header */
+.jumbotron{
     position: relative;
     top: 50px;
 }
+
 
 h1{
     font-size: 48px;
@@ -196,3 +202,13 @@ main .bg-lightblue button{
     border: none;
     padding: .5rem .7rem;
 }
+
+.FAQ{
+    display: inline-block;
+    font-weight: 600;
+    margin: 24px 0;
+    width: 90%;
+}
+
+/* stili del footer */
+
