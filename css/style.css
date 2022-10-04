@@ -232,10 +232,10 @@ main .p-container{
 
 .card{
     flex-direction: column;
-    max-width: 215px;
+    max-width: 250px;
 }
 .card img{
-    max-width: 215px;
+    max-width: 250px;
     object-fit: contain;
     display: block;
 }
