@@ -69,7 +69,7 @@ h3{
     width: 30%;
 }
 
-section:last-of-type{
+main section:last-of-type{
     margin-bottom: var(--section-margin);
     margin-top: 0;
 }
@@ -78,7 +78,7 @@ section:last-of-type{
     border-bottom: 1px solid;
 }
 
-section{
+main section{
     max-width: 50vw;
     margin: var(--section-margin) auto 0;
 }
@@ -173,6 +173,7 @@ main div ul li{
     border: 1px solid #9c9d8c;
     flex-grow: 1;
     margin: 24px 0 0;
+    width: -webkit-fill-available;
 }
 
 .plan > span{
@@ -387,6 +388,14 @@ main .p-container{
     color: #73242e;
 }
 
+.bg-lightblue .dflex div:first-child{
+    width: 60%;
+}
+
+.bg-lightblue .d-flex div:last-child{
+    width: 40%;
+}
+
 .bg-lightblue section .d-flex{
     display: flex;
     align-items: baseline;
@@ -394,7 +403,6 @@ main .p-container{
 }
 
 main .bg-lightblue button{
-    width: 50%;
     border: none;
     padding: .5rem .7rem;
 }
