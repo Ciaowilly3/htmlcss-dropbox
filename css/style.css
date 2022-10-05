@@ -46,7 +46,7 @@ button{
 }
 
 .img-container{
-    width: 70%;
+    width: 66%;
 }
 .large-container{
     max-width: 65vw;
@@ -142,6 +142,8 @@ header .img-container img{
 .fa-arrow-down{
     margin-top: 50px;
     font-size: 32px;
+    position: absolute;
+    bottom: 50px;
 }
 
 /* stili per il main */
@@ -175,6 +177,7 @@ main div ul li{
     padding: 8px 0;
     text-align: center;
 }
+
 .content-container{
     width: 90%;
     margin: auto;
@@ -191,28 +194,63 @@ main div ul li{
     padding: var(--distance32) 0;
 
 }
-.content-container button{
+
+.ul-container ul li{
+    position: relative;
+    padding-left: 20px;
+}
+
+.icon{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.plan button{
     align-self: center;
     width: 99%;
     margin-bottom: var(--distance32);
 }
+
 .content-container .little-row{
     width: 20%;
     margin: 64px 0 var(--distance32) 0;
     border-color: #9c9d8c;
 }
+
 .fa-check{
     color: #0061ff;
 }
+
+/* piano di pagamento orizzontale */
+.horizzontal-plan{
+    padding: 24px;
+    padding-top: 0;
+    column-gap: var(--distance32);
+    justify-content: space-between;
+}
+.horizzontal-plan > :first-child{
+    max-width: 60%;
+}
+.horizzontal-plan > :last-child{
+    max-width: 30%;
+    padding-top: 24px;
+    flex-grow: 1;
+}
+
+.horizzontal-plan p{
+    margin-top: var(--distance32);
+}
+
 /* stili per la seconda sezione */
 
 main .img-container img{
-    max-width: 600px;
+    max-width: 100%;
     object-fit: contain;
     display: block;
 }
 main .p-container{
     padding: 20px;
+    flex-grow: 1;
 }
 
 .partner-btn{
