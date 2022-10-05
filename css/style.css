@@ -71,6 +71,7 @@ h3{
 
 section:last-of-type{
     margin-bottom: var(--section-margin);
+    margin-top: 0;
 }
 
 .little-row{
@@ -296,6 +297,7 @@ main .p-container{
 .svg-container{
     max-width: calc(100% / 3);
     aspect-ratio: 1 / 1;
+    flex-wrap: wrap;
 }
 
 .svg-container h2{
@@ -333,9 +335,50 @@ main .p-container{
 
 .svg-container img{
     display: block;
-    width: 100%;
+    width: 40%;
+    filter: invert();
 }
 
+.single-svg{
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    justify-content: center;
+    align-items: center;
+}
+/* credo delle classi per dare i background color */
+
+.bg-green{
+    background-color: #a2d39b;
+    border: var(--small-font) solid #d1e9cd;
+}
+
+.bg-bordeaux{
+    background-color: #73242e;
+}
+
+.bg-lightblue-svg{
+    background-color: #0093ce;
+}
+
+.bg-red{
+    background-color: #ff1c1c;
+}
+
+.bg-red2{
+    background-color: #d5001f;
+}
+
+.bg-celeste{
+    background-color: #b4d0e7;
+}
+
+.bg-blue{
+    background-color: #0d2481;
+}
+
+.bg-yellow{
+    background-color: #ffd830;
+}
 /* stili per la sezione sotto i quadrati */
 
 .bg-lightblue h2{
